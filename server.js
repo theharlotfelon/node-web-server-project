@@ -50,6 +50,12 @@ app.get('/about', function (req,res) {
     });
 });
 
+app.get('/project', function (req, res) {
+    res.render('project.hbs', {
+        pageTitle: 'Projects'
+    });
+});
+
 app.get('/bad', function (req,res) {
     res.send({
         errorMessage: "Unable to process request"
